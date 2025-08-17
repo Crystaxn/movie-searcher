@@ -1,0 +1,56 @@
+body{
+  margin: 0;
+  padding-top: 40px;
+  margin-bottom: 0px;
+  background-color:#F2F2F2;
+}
+.details-button{
+  background-color: #343434
+}
+.details-button:hover{
+  background-color:black;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.movies:hover{
+  transform:scale(1.06);
+  transition: 300ms;
+}
+.mobile-close{
+  display: block;
+}
+.movie-popup{
+  flex-direction: column;
+}
+.star-info,.pc-close{
+  display: none;
+}
+.useless{
+  display: block;
+  width: 100%
+}
+.movie-info{
+  height: fit-content;
+}
+
+@media (min-width: 1000px) {
+  .movie-popup{
+    flex-direction: row;
+    overflow-y: auto;
+  }
+  .mobile-close{
+    display: none;
+  }
+  .star-info, .pc-close{
+    display: block;
+  }
+  .useless,.uselesst{
+    display: none;
+    width: fit-content;
+  }
+  .movie-info{
+    overflow-y:auto ;
+    height: 100%;
+  }
+}
