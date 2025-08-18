@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faStarHalfStroke, faSearch, faHistory, faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 import { faStar as faStarRegular } from "@fortawesome/free-regular-svg-icons";
+import { faGithub, faWhatsapp, faTiktok} from "@fortawesome/free-brands-svg-icons";
 import { useEffect } from "react";
 
 function MovieSearch() {
@@ -197,10 +198,11 @@ function MovieSearch() {
           padding: "8px 16px",
           border: "1px solid grey",
           fontFamily: "sans-serif",
-          marginTop: "30px",
+          justifyContent: "center",
+          
           fontSize: "1.3em",
           alignItems: "center",
-          margin: "30px",
+          margin: "30px auto",
           borderRadius: "10px",
         }}
       >
@@ -481,17 +483,25 @@ function MovieSearch() {
         </div>
 
         {/* Footer */}
-        <div style={{ display: "flex", justifyContent: "center", marginTop: "40px" }}>
+        <div style={{ display: "flex", justifyContent: "center",  alignItems: "center", flexDirection: "column", paddingTop: "70px"}}>
           <p
             style={{
               display: "flex",
               alignItems: "flex-end",
               color: darkMode === true ? "white":"black",
               fontSize: "1.2em",
+              flexDirection: "column",
+              margin: "2px"
             }}
           >
             Created By Uyfer
+            
           </p>
+          <div style={{display: "flex", justifyContent: "center",color: darkMode === true ? "white":"black",}}>
+            <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faWhatsapp}></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faTiktok}></FontAwesomeIcon>
+            </div>
         </div>
       </div>
     </>
